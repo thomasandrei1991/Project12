@@ -31,9 +31,9 @@
                             <h2>Gender</h2><br>
                             <div class="gender-option">
                                 <label >Male</label>
-                                <input type="radio" name="sex" value="Male">
+                                <input type="radio" name="male" value="Male">
                                 <label>Female</label>
-                                <input type="radio" name="sex" value="Female">
+                                <input type="radio" name="female" value="Female">
                             </div>
                         </div>
                     </form>
@@ -63,3 +63,6 @@
         </div>
     </body>
 </html>
+<?php
+?>
+ 

@@ -24,9 +24,19 @@ $users = $stmt->fetchAll();
         <td><?= $user['username'] ?></td>
         <td><?= $user['email'] ?></td>
         <td>
-            <!-- Ipinapasa ang user ID sa edit at delete -->
-            <a href="edit.php?id=<?= $user['id'] ?>">Edit</a>
-            <a href="delete.php?id=<?= $user['id'] ?>">Delete</a>
+            <!-- EDIT BUTTON -->
+            <form action="edit.php" method="GET" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                <button type="submit">Edit</button>
+            </form>
+            <!-- DELETE BUTTON -->
+            <form action="delete.php" method="POST" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                <button type="submit" name="delete"
+                    onclick="return confirm('Are you sure you want to delete this user?')">
+                    Delete
+                </button>
+            </form>
         </td>
     </tr>
     <?php endforeach; ?>
