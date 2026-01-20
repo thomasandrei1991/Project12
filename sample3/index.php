@@ -56,6 +56,10 @@
                                     <td>Male</td>
                                 </tr>
                             </table>
+                            <div class="button-container">
+                                <button>Add</button>
+                                <button>Delete</button>
+                            </div>
                         </div>
                     </form>
                 </div>
